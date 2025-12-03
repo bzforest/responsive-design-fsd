@@ -167,4 +167,15 @@ h3 {
   left: 0px;
 }
 
-/* Start coding here */
+@media only screen and (min-width:333px){
+.categories {
+  display: flex;
+  flex-direction: column;
+}
+.row-1, .row-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+}
