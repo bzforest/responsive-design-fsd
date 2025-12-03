@@ -4,7 +4,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
-
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 .topic {
   display: flex;
   flex-direction: column;
@@ -67,6 +72,7 @@ h3 {
   min-width: 450px;
   width: 100vw;
   height: 50vh;
+  flex-wrap: wrap;
 }
 
 .row-1,
@@ -74,6 +80,7 @@ h3 {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 }
 
 .job-item,
@@ -168,3 +175,24 @@ h3 {
 }
 
 /* Start coding here */
+
+@media only screen and (max-width: 600px) {
+
+  .topic{
+    height: auto;
+    padding-bottom: 1rem;
+  }
+  .categories {
+    display: flex;
+    flex-direction: column;   
+    align-items: center; 
+    justify-content: center;
+    height: auto;
+    min-width: auto;
+  }
+
+  .row-1,
+  .row-2 {
+    flex-direction: column;
+  }
+}
